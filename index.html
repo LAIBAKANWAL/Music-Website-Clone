@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Music Player</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="img/Favicon Icon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="brand"><img src="img/logo.jpg" alt="Spotify"><span>Spotify</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h2>Best NCS Songs</h2>
+            <div class="songItemsContainer">
+                <div class="songItems">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="2">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="3">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="4">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="5">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="6">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="7">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="8">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp durationTime">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="9">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="durationTime timestamp">05:34</span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+                <div class="songItems">
+                    <img alt="10">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songListPlay"><span class="timestamp"><span class="durationTime timestamp">05:34</span></span><span class="songItemPlay icon-circle-play"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="vol" min="0" max="100" value="0" id="progressBar">
+        <p id="currentTime">00 : 00</p>
+        <p id="MainDurationTime">00 : 00</p>
+
+        <div class="icon_btn">
+            <span class="icon-backward-step" id="previous"></span>
+            <span class="icon-circle-play" id="masterPlay"></span>
+            <span class="icon-forward-step" id="next"></span>
+        </div>
+        <div id="songInfo">
+            <!-- <img src="playing.gif" alt="playStart" id="music_icon">  -->
+            <span id="masterSongName">Otilia - Bilionera</span> 
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

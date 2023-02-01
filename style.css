@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(250, 232, 209);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* icons */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rtll9b');
+  src:  url('fonts/icomoon.eot?rtll9b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rtll9b') format('truetype'),
+    url('fonts/icomoon.woff?rtll9b') format('woff'),
+    url('fonts/icomoon.svg?rtll9b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x:before {
+  content: "\e900";
+}
+.icon-xmark:before {
+  content: "\e901";
+}
+.icon-volume-high:before {
+  content: "\e902";
+}
+.icon-volume-low:before {
+  content: "\e903";
+}
+.icon-volume-off:before {
+  content: "\e904";
+}
+.icon-volume-xmark:before {
+  content: "\e905";
+}
+.icon-weight-hanging:before {
+  content: "\e906";
+}
+.icon-weight-scale:before {
+  content: "\e907";
+}
+.icon-wifi:before {
+  content: "\e908";
+}
+.icon-users:before {
+  content: "\e909";
+}
+.icon-user:before {
+  content: "\e90a";
+}
+.icon-user-check:before {
+  content: "\e90b";
+}
+.icon-user-gear:before {
+  content: "\e90c";
+}
+.icon-user-graduate:before {
+  content: "\e90d";
+}
+.icon-user-group:before {
+  content: "\e90e";
+}
+.icon-unlock:before {
+  content: "\e90f";
+}
+.icon-unlock-keyhole:before {
+  content: "\e910";
+}
+.icon-trash:before {
+  content: "\e911";
+}
+.icon-square-phone:before {
+  content: "\e912";
+}
+.icon-square-phone-flip:before {
+  content: "\e913";
+}
+.icon-phone:before {
+  content: "\e914";
+}
+.icon-phone-flip:before {
+  content: "\e915";
+}
+.icon-phone-slash:before {
+  content: "\e916";
+}
+.icon-phone-volume:before {
+  content: "\e917";
+}
+.icon-play:before {
+  content: "\e918";
+}
+.icon-paperclip:before {
+  content: "\e919";
+}
+.icon-location-arrow:before {
+  content: "\e91a";
+}
+.icon-location-crosshairs:before {
+  content: "\e91b";
+}
+.icon-location-dot:before {
+  content: "\e91c";
+}
+.icon-location-pin:before {
+  content: "\e91d";
+}
+.icon-lock:before {
+  content: "\e91e";
+}
+.icon-lock-open:before {
+  content: "\e91f";
+}
+.icon-folder:before {
+  content: "\e920";
+}
+.icon-folder-closed:before {
+  content: "\e921";
+}
+.icon-folder-open:before {
+  content: "\e922";
+}
+.icon-forward:before {
+  content: "\e923";
+}
+.icon-forward-fast:before {
+  content: "\e924";
+}
+.icon-forward-step:before {
+  content: "\e925";
+}
+.icon-eject:before {
+  content: "\e926";
+}
+.icon-envelope:before {
+  content: "\e927";
+}
+.icon-envelope-circle-check:before {
+  content: "\e928";
+}
+.icon-circle-check:before {
+  content: "\e929";
+}
+.icon-circle-chevron-down:before {
+  content: "\e92a";
+}
+.icon-circle-down:before {
+  content: "\e92b";
+}
+.icon-circle-minus:before {
+  content: "\e92c";
+}
+.icon-circle-pause:before {
+  content: "\e92d";
+}
+.icon-circle-play:before {
+  content: "\e92e";
+}
+.icon-chevron-left:before {
+  content: "\e92f";
+}
+.icon-chevron-right:before {
+  content: "\e930";
+}
+.icon-cart-shopping:before {
+  content: "\e931";
+}
+.icon-backward:before {
+  content: "\e932";
+}
+.icon-backward-fast:before {
+  content: "\e933";
+}
+.icon-backward-step:before {
+  content: "\e934";
+}
+.icon-circle-stop:before {
+  content: "\e935";
+}
+.icon-circle-user:before {
+  content: "\e936";
+}
+.icon-circle-xmark:before {
+  content: "\e937";
+}
+.icon-sistrix:before {
+  content: "\e938";
+}
+.icon-google:before {
+  content: "\e939";
+}
+.icon-gratipay:before {
+  content: "\e93a";
+}
+.icon-facebook:before {
+  content: "\e93b";
+}
+.icon-facebook-f:before {
+  content: "\e93c";
+}
+.icon-creative-commons:before {
+  content: "\e93d";
+}
+.icon-dailymotion:before {
+  content: "\e93e";
+}
+.icon-creative-commons-nd:before {
+  content: "\e93f";
+}
+.icon-aws:before {
+  content: "\e940";
+}
+
+/* navbar */
+nav ul{
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    height: 50px;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul li{
+    color: white;
+    padding: 0px 10px;
+}
+nav ul li a:hover{
+color: rgb(250, 232, 209);
+font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.brand img{
+ width: 55px;
+}
+
+
+.container{
+  height: auto;
+  font-family: 'Varela Round', sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  border-radius: 12px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  background-image: url('img/bg.jpg');
+  background-position: right top;
+  /* background-attachment: fixed; */
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+}
+.about_container{
+  font-family: 'Varela Round', sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  width: 80%;
+  margin: 10rem auto;
+  padding: 30px;
+}
+h2{
+  margin-bottom: 1rem;
+}
+.songList{
+  width: 50%;
+}
+.songItemsContainer{
+  margin-top: 30px;
+}
+.songItems{
+  /* width: 80%; */
+  height: 35px;
+  background-color:white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 5px;
+}
+.songItems img{
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.icon-circle-play, .icon-circle-pause{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.icon-circle-play:hover, .icon-circle-pause:hover{
+  color: rgb(163, 160, 157);
+}
+#songInfo{
+  position: absolute;
+  left: 3.5vw;
+  top: 9vh;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#music_icon{
+  width: 45px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+/* bottom */
+.bottom{
+  position: sticky;
+  height: 110px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid gainsboro;
+  color: white;
+}
+#progressBar{
+  width: 85vw;
+}
+#currentTime{
+  font-family: 'Varela Round', sans-serif;
+  position: absolute;
+  left: 7vw;
+  top: 5.5vh;
+}
+#MainDurationTime{
+  font-family: 'Varela Round', sans-serif;
+  position: absolute;
+  right: 7vw;
+  top: 5.5vh;
+}
+.icon_btn{
+  margin: 10px 10px;
+  font-size: 2rem;
+  color: rgb(201, 192, 192);
+}
+.icon_btn span:hover{
+  color:white
+}
+.icon_btn span, input{
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 980px) {
+  .songList{
+    width: 100%;
+  }
+  #songInfo{
+    left: 2vw;
+  }
+}
+ 
+@media only screen and (max-width: 980px) {
+  
+  #songInfo{
+    left: 1vw;
+  }
+}
+ 
